@@ -6,6 +6,7 @@ const Racks = () => {
     const colorA = "#FFD4eA"
     const colorB = "#DCDEFF"
 
+    // TODO: add dynamic number of rectangles from props
     return (
        <>
         <Rect
@@ -14,7 +15,6 @@ const Racks = () => {
             width={30}
             height={90}
             fill={colorA}
-            draggable
             />
         <Rect
             x={60}
@@ -22,7 +22,6 @@ const Racks = () => {
             width={45}
             height={150}
             fill={colorB}
-            draggable
             />
        </>
     )

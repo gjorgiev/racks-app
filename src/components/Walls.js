@@ -1,9 +1,7 @@
 import React from 'react'
 import { Shape } from 'react-konva'
 
-const Walls = ({data}) => {
-    const margin = 10
-    const lineWidth = 3
+const Walls = ({data, margin}) => {
 
     const {A, B, C1, C2} = data
 
@@ -32,7 +30,7 @@ const Walls = ({data}) => {
                 // (!) Konva specific method, it is very important
                 context.fillStrokeShape(shape);
             }}
-            strokeWidth={lineWidth}
+            strokeWidth={3}
             stroke="black"
         />
     )
