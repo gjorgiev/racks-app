@@ -10,6 +10,15 @@ const DrawRoom = ({ onDraw }) => {
   const onSubmit = (e) => {
     e.preventDefault();
 
+    if (!A) {
+      alert("Please enter value for side A");
+      return;
+    }
+
+    if (!B) {
+      alert("Please enter value for side B");
+      return;
+    }
     onDraw({ A, B, C1, C2 });
   };
 
